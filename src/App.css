@@ -1,0 +1,103 @@
+.App{
+  background-color: #e7e9eb;
+  width: 100%;
+  overflow: auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  height: auto;
+}
+.widget-panel{
+  height:100%;
+  width:220px;
+  float: left;
+  background:#fdfcfc;
+  text-align: center;
+  padding-top: 10px;
+}
+.widget-panel-description{
+  padding:10px;
+  text-align: left;
+  margin-top: -30px;
+}
+.widget-panel-body{
+  padding:10px;
+  text-align: left;
+}
+.board{
+  width: calc(100% - 230px);
+  height:100%;
+  float:right;
+  
+  background-color:#f3f3f3;
+}
+
+.edit_board{
+  background-image: url('./back.png');
+}
+
+#searchInput{
+  width: 78%;
+  height: 40px;
+  padding:0px 5px 0px 5px;
+  padding-left: 40px;
+  border:0px;
+  border-bottom: 1px solid rgb(179, 158, 106);
+}
+
+#searchInput:focus-visible{
+  outline: none;
+  border:0px !important;
+  border-bottom: 1px solid rgb(255, 183, 0) !important;
+  border-radius: 0px !important;
+}
+
+#description{
+  color:grey;
+  font-size: 10pt;
+}
+
+.widget_btn{
+  border:0px;
+  background: none;
+  margin-right: 10px;
+}
+
+.widget_icon{
+  width:23px;
+}
+
+#board_description{
+  position:relative;
+  top:45%;
+  font-size: 15pt;
+  font-weight: bold;
+  color:#bdbdbd;
+  text-align: center;
+}
+
+.draggable_widget,.draggable_widget_icon{
+  display: inline-block;
+}
+.draggable_widget input{
+  height:30px;
+  width:200px;
+  border:1px solid rgb(141, 190, 255);
+}
+.draggable_widget input:focus-visible{
+  outline: none ;
+  border:1px solid rgb(141, 190, 255);
+  ;
+}
+
+.draggable_widget label{
+  height: 30px;
+  padding: 5px;
+  width: 200px;
+  border:1px dashed rgb(141, 190, 255);
+}
+
+.draggable_widget{
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  }
